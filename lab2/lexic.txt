@@ -1,0 +1,32 @@
+Alphabet:
+ -letters: a-z and A-Z
+ -digits: 0-9
+ -special: _
+
+Operators: =, +, -, *, /, %, <, >, <=, >=, ==, !=, ||, &&
+
+Separators: ", {}, (), ;, space,
+
+Reserved words: intreg, sfoara, lista, inceput, sfarsit, cat_timp, pentru, daca, scrie, citeste
+
+Identifier:
+ <identifier> ::= <letter> | <letter><char_seq>
+ <char_seq> ::= <char> | <char><char_seq>
+ <char> = <letter> | <digit>
+ <letter> ::= a | b | c | ... | z | A | B | ... | Z
+ <digit> ::= 0 | 1 | 2 | 3 | .. | 9
+
+Constants:
+1.Intreg
+ <integer> ::=  0 | <sign> <unsigned> | <unsigned> 
+ <sign> ::= - | + 
+ <unsigned> ::= <nonzerodigit> | <nonzerodigit> <digit_seq> 
+ <digit_seq> ::= <digit> | <digit> <digit_seq> 
+ <nonzerodigit> ::= 1 | 2 | 3 .. | 9 
+ <digit> ::= 0 | <nonzerodigit> 
+2.String
+ <string> = "<char_seq>"
+ <char_seq> ::= <char> | <char><char_seq>
+ <char> = <letter> | <digit>
+ <letter> ::= a | b | c | ... | z | A | B | ... | Z
+ <digit> ::= 0 | 1 | 2 | 3 | .. | 9
