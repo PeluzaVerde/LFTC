@@ -4,7 +4,7 @@
 <program> ::= inceput <stmt list> sfarsit
 
 <stmt list> ::= <stmt> | <stmt><stmt list>
-<stmt> ::= <declaration stmt; | <assignment stmt>; | <if stmt>; | <for stmt>; | <while stmt>; | <read stmt>; | <write stmt>;
+<stmt> ::= <declaration stmt; | <assignment stmt>; | <if stmt>; | <for stmt>; | <while stmt>; | <read stmt>; | <write stmt>; // if/while/for stmt nu are nevoie de ;
 <declaration stmt> ::= <type> <identifier> | <array type> <identifier>
 <assignment stmt> ::= <identifier> = <expr>
 <if stmt> ::= daca(<condition list>){ <stmt list> }
