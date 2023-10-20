@@ -1,10 +1,10 @@
 <type> ::= intreg | sfoara
 <array type> ::= lista_<type>
 
-<program> ::= inceput <stmt list> sfarsit
+<program> ::= inceput <stmt list> sfarsit //in your code its inceput <stmt list> final 
 
 <stmt list> ::= <stmt> | <stmt><stmt list>
-<stmt> ::= <declaration stmt; | <assignment stmt>; | <if stmt>; | <for stmt>; | <while stmt>; | <read stmt>; | <write stmt>; // if/while/for stmt nu are nevoie de ;
+<stmt> ::= <declaration stmt; | <assignment stmt>; | <if stmt>; | <for stmt>; | <while stmt>; | <read stmt>; | <write stmt>; // if/while/for stmt dont need the ; at the end
 <declaration stmt> ::= <type> <identifier> | <array type> <identifier>
 <assignment stmt> ::= <identifier> = <expr>
 <if stmt> ::= daca(<condition list>){ <stmt list> }
@@ -14,6 +14,8 @@
 <print stmt> ::= scrie(<value>)
 
 <value> ::= <int value> | <string value>
+
+//good overall, be careful with token names
 <int value> ::= <integer> | <identifier>
 <string value> ::= <string> | <identfier>
 <expr> ::= <int expr> | <string expr>
