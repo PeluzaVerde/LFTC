@@ -23,7 +23,7 @@ intreg
 sfoara
 lista
 inceput
-sfarsit
+sfarsit //this token is different in your code
 cat_timp
 pentru
 daca
