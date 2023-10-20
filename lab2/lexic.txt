@@ -14,7 +14,7 @@ Identifier:
  <char_seq> ::= <char> | <char><char_seq>
  <char> = <letter> | <digit>
  <letter> ::= a | b | c | ... | z | A | B | ... | Z
- <digit> ::= 0 | 1 | 2 | 3 | .. | 9
+ <digit> ::= 0 | 1 | 2 | 3 | .. | 9 //some of these repeat
 
 Constants:
 1.Intreg
